@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo Futbolero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Estilo Futbolero</h1>
+    </header>
+
+    <section id="camisetas">
+        <h2>Nuestras Camisetas</h2>
+        <div class="camiseta-grid">
+            <div class="camiseta">
+                <img src="imagenes/boca.png" alt="Camiseta Boca">
+                <p>Camiseta Boca</p>
+                <p>Precio: $80.000</p>
+                <button onclick="agregarAlCarrito('Camiseta Boca', 1, 40000)">Agregar al carrito</button>
+                <button onclick="quitarDelCarrito('Camiseta Boca')">Quitar del carrito</button>
+            </div>
+            <div class="camiseta">
+                <img src="imagenes/river.png" alt="Camiseta River">
+                <p>Camiseta River</p>
+                <p>Precio: $80.000</p>
+                <button onclick="agregarAlCarrito('Camiseta River', 1, 40000)">Agregar al carrito</button>
+                <button onclick="quitarDelCarrito('Camiseta River')">Quitar del carrito</button>
+            </div>
+            <div class="camiseta">
+                <img src="imagenes/estudiantes.png" alt="Camiseta Estudiantes">
+                <p>Camiseta Estudiantes</p>
+                <p>Precio: $60.000</p>
+                <button onclick="agregarAlCarrito('Camiseta Estudiantes', 1, 40000)">Agregar al carrito</button>
+                <button onclick="quitarDelCarrito('Camiseta Estudiantes')">Quitar del carrito</button>
+            </div>
+            <div class="camiseta">
+                <img src="imagenes/lorenzo.png" alt="Camiseta San Lorenzo">
+                <p>Camiseta San Lorenzo</p>
+                <p>Precio: $60.000</p>
+                <button onclick="agregarAlCarrito('Camiseta San Lorenzo', 1, 40000)">Agregar al carrito</button>
+                <button onclick="quitarDelCarrito('Camiseta San Lorenzo')">Quitar del carrito</button>
+            </div>
+            <div class="camiseta">
+                <img src="imagenes/racing.png" alt="Camiseta Racing">
+                <p>Camiseta Racing</p>
+                <p>Precio: $65.000</p>
+                <button onclick="agregarAlCarrito('Camiseta Racing', 1, 40000)">Agregar al carrito</button>
+                <button onclick="quitarDelCarrito('Camiseta Racing')">Quitar del carrito</button>
+            </div>
+            <div class="camiseta">
+                <img src="imagenes/independiente.png" alt="Camiseta Independiente">
+                <p>Camiseta Independiente</p>
+                <p>Precio: $65.000</p>
+                <button onclick="agregarAlCarrito('Camiseta Independiente', 1, 40000)">Agregar al carrito</button>
+                <button onclick="quitarDelCarrito('Camiseta Independiente')">Quitar del carrito</button>
+            </div>
+            <div class="camiseta">
+                <img src="imagenes/argentina.png" alt="Camiseta Argentina">
+                <p>Camiseta Argentina</p>
+                <p>Precio: $85.000</p>
+                <button onclick="agregarAlCarrito('Camiseta Argentina', 1, 40000)">Agregar al carrito</button>
+                <button onclick="quitarDelCarrito('Camiseta Argentina')">Quitar del carrito</button>
+            </div>
+            <div class="camiseta">
+                <img src="imagenes/aldosivi.png" alt="Camiseta Aldosivi">
+                <p>Camiseta Aldosivi</p>
+                <p>Precio: $50.000</p>
+                <button onclick="agregarAlCarrito('Camiseta Aldosivi', 1, 40000)">Agregar al carrito</button>
+                <button onclick="quitarDelCarrito('Camiseta Aldosivi')">Quitar del carrito</button>
+            </div>
+            <div class="camiseta">
+                <img src="imagenes/alvarado.png" alt="Camiseta Alvarado">
+                <p>Camiseta Alvarado</p>
+                <p>Precio: $50.000</p>
+                <button onclick="agregarAlCarrito('Camiseta Alvarado', 1, 40000)">Agregar al carrito</button>
+                <button onclick="quitarDelCarrito('Camiseta Alvarado')">Quitar del carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div class="datos-usuario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+            <label for="dni">DNI:</label>
+            <input type="number" id="dni" placeholder="Ingresa tu DNI">
+        </div>
+        <table id="tabla-carrito">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los artículos del carrito se agregarán dinámicamente aquí -->
+            </tbody>
+        </table>
+        <button id="comprar" onclick="realizarCompra()">Comprar</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
